@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+#local Dependency
 .DS_Store
 node_modules
 /dist
@@ -43,7 +43,3 @@ pnpm-debug.log*
 *.zip
 *.tar.gz
 *.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
->>>>>>> 1c67cf25dd1d76e11ad74bc124325cba70cea49d

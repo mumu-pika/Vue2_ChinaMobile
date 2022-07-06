@@ -8,3 +8,6 @@ A project for ChinaMobile
 vue + vuex + vue-router + axios + less + elementUI + webpack打包等技术
 实现登录页面，商品选择，添加入购物车等功能。
 
+![首页页面](https://s2.loli.net/2022/07/06/NTAzuoP6xJm8Z7S.png)
+
+![登录页面](https://s2.loli.net/2022/07/06/YFbRsW5BKuZvyPG.png)
