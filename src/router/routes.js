@@ -19,8 +19,8 @@ import GroupBuy from '@/pages/Center/groupOrder'
 
 import Register from '@/pages/Register'
 import Login from '@/pages/Login'
-import store from '@/store'
-import router from '@/router'
+// import store from '@/store'
+// import router from '@/router'
 
 /* 
 路由懒加载
@@ -163,7 +163,7 @@ export default [
     meta: {
       isHideFooter: true
     },
-    /* 
+    /*
         beforeEnter: (to, from, next) => { // 路由前置守卫
           // 如果还没有登陆, 放行
           if (!store.state.user.userInfo.token) {

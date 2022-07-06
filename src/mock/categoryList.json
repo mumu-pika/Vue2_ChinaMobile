@@ -1,0 +1,53 @@
+[
+  {
+    "categoryId": 1,
+    "categoryName": "办业务",
+    "categoryChild": [
+      {
+        "categoryId": 1,
+        "categoryName": "主套餐",
+        "categoryChild": [
+          {
+            "categoryId": 1,
+            "categoryName": "5G智选套餐"
+          },
+          {
+            "categoryId": 2,
+            "categoryName": "全家享套餐"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": 2,
+    "categoryName": "买手机",
+    "categoryChild": []
+  },
+  {
+    "categoryId": 3,
+    "categoryName": "套餐/靓号",
+    "categoryChild": []
+  },
+  {
+    "categoryId": 4,
+    "categoryName": "家庭业务",
+    "categoryChild": []
+  },
+  {
+    "categoryId": 5,
+    "categoryName": "智能硬件",
+    "categoryChild": []
+  },
+  {
+    "categoryId": 6,
+    "categoryName": "查询服务",
+    "categoryChild": []
+  },
+  {
+    "categoryId": 7,
+    "categoryName": "特色专区",
+    "categoryChild": []
+  }
+
+]

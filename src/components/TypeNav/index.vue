@@ -10,10 +10,10 @@
           <div class="sort" v-show="show">
             <div class="all-sort-list2" @click="goSearch">
               <div class="item" v-for="(c1, index) in categoryList" :key="c1.categoryId">
-                <h3 :class="{ cur: currentIndex == index }" @mouseenter="changeIndex(index)">
-                  <!-- 上方的h3运用了js方法来改变鼠标悬停导航栏条目上变色的效果，将当前鼠标索引值等同于所在条目的索引值时候，赋予那个条目一个class属性cur,触发 -->
+                <li :class="{ cur: currentIndex == index }" @mouseenter="changeIndex(index)">
+                  <!-- 上方的li运用了js方法来改变鼠标悬停导航栏条目上变色的效果，将当前鼠标索引值等同于所在条目的索引值时候，赋予那个条目一个class属性cur,触发 -->
                   <a :data-categoryName="c1.categoryName" :data-category1Id="c1.categoryId">{{ c1.categoryName }}</a>
-                </h3>
+                </li>
                 <!-- 二级、三级分类 -->
                 <div class="item-list clearfix" :style="{ display: currentIndex == index ? 'block' : 'none' }">
                   <div class="subitem">
@@ -152,7 +152,7 @@
 
 <style scoped lang="less">
   .type-nav {
-    border-bottom: 2px solid #e1251b;
+    border-bottom: 1px solid #e1251b;
 
     /* 整个横向导航栏的样式 */
     .container {
@@ -190,26 +190,34 @@
         width: 210px;
         height: 461px;
         position: absolute;
-        background: #fafafa;
+        background: #ffffff;
+        border: 1px solid #3eb4fa;
         z-index: 999;
+        display:flex;
+        flex-direction: column;
 
         .all-sort-list2 {
+          width: 100%;
           .item {
-            h3 {
-              line-height: 30px;
-              font-size: 14px;
+            li {
+              list-style: none;
+              height: 4rem;
+              line-height: 4rem;
+              font-size: 1rem;
               font-weight: 400;
               overflow: hidden;
-              padding: 0 20px;
+              padding: 0 2rem;
               margin: 0;
-
+              &:hover a{
+                color: #3eb0ec
+              }
               a {
                 color: #333;
               }
 
               /* 鼠标悬停至导览栏条目上变色 */
               &.cur {
-                background: skyblue;
+                background: #fefaf1;
               }
             }
 
@@ -219,9 +227,10 @@
               position: absolute;
               width: 734px;
               min-height: 460px;
-              background: #f7f7f7;
+              background: #ffffff;
               left: 210px;
-              border: 1px solid #ddd;
+              border: 1px solid #eee;
+              border-radius: 2px;
               top: 0;
               z-index: 9999 !important;
 
