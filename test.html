@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+            整个 Generator 函数就是一个封装的异步任务，或者说是异步任务的容器。
+            异步操作需要暂停的地方，都用 yield 语句注明。Generator 函数的执行方法如下。
+            Generator 函数是协程在 ES6 的实现，最大特点就是可以交出函数的执行权（即暂停执行）。
+        */
+        // var id = 'GLOBAL';
+        // var obj = { id: 'OBJ', a: function () { console.log(this.id); }, b: () => { console.log(this.id); } }; 
+        // obj.a(); // 'OBJ' 
+        // obj.b(); // 'GLOBAL' 
+
+
+        // let arr1 = [1, 2, 3, 3, 2, 4, 5, 6]
+        // let arr2 = [2, 4, 4, 6]
+        // // 数组去重
+        // const result = [...new Set(arr1)]
+        // console.log(result)
+
+
+        // //交集 (思路：先把这两个数组去重，然后利用filter过滤器进行去重处理)
+        // let temp1 = [...new Set(arr1)] //去重arr1
+        // let result = temp1.filter((item)=>{
+        //     let s2 = new Set(arr2); //arr2去重，注意此时是Set集合
+        //     if(s2.has(item)){
+        //         return true
+        //     }else{
+        //         return false
+        //     }
+        // })
+        // console.log(result)
+
+        // //交集的精简写法
+        // let result = [...new Set(arr1)].filter(item => new Set(arr2).has(item))
+        // console.log("交集为：" + result)
+
+
+        // //并集
+        // let union = new Set([...arr1, ...arr2]) //先将两个数组合并
+        // console.log("并集为：" + union)
+
+        // //差集
+        // let diff = [...new Set(arr1)].filter(item => !(new Set(arr2).has(item)))
+        // console.log("差集为：" + diff)
+
+        let m = new Map()
+        m.set('name','pika')
+        m.set('change',function(){console.log('12345')})
+        // console.log(m.get('change'))
+
+        // let key = {
+        //     school: '快乐花园'
+        // }
+
+        // //设置
+        // m.set(key,["上海加油","大家加油"])
+        // console.log(m)
+
+        // //删除
+        // m.delete('name')
+        // console.log(m)
+
+        //遍历
+        for(let v of m){
+            console.log(v)
+        }
+        
+    </script>
+</body>
+
+</html>
